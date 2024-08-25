@@ -1,0 +1,459 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+/********* table of style */
+/* ============the main container ============= */
+/* ============the hero section ============= */
+/* ============the hero section text and paragraph to intro the website ============= */
+/* ============the side part to display best products ============= */
+/* ============the ads  products posters ============= */
+/* ==== features of our products ====== */
+body {
+  background-color: #cccccc3b;
+
+}
+/* ============the main container ============= */
+.container {
+  max-width: 100%;
+
+}
+/* main content from layout page */
+.main-content {
+  width: 100%;
+  border: 2px solid green;
+
+}
+/* ============the hero section ============= */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+
+
+}
+/* main section contain hero section features ,display products  */
+.main-section{
+  display: flex;
+  flex-direction: column;
+  width: 74%;
+  
+}
+
+/* ============the hero section text and paragraph to intro the website ============= */
+
+.hero-section .text-intro {
+  background-image: url("https://i.pinimg.com/564x/cf/c8/b3/cfc8b3ebe722eeb11ad29db2ad88a3a1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
+  border-radius: 10px;
+
+}
+
+.hero-section .text-intro .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.44);
+  background-image: linear-gradient(112deg, #8a57ea, #ff00620f);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hero-section .text-intro .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-section .text-intro .description h1 {
+  font-size: 40px;
+  color: white;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+
+.hero-section .text-intro .description p {
+  color: rgb(225, 219, 219);
+}
+
+.hero-section .text-intro .description button {
+  background-color: #f56a79;
+  padding: 5px;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+}
+/* ============the side part to display best and popular products and ads products for other websites ============= */
+.popular-products {
+  background-color: #f56a79;
+  width: 23%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  
+}
+
+.popular-products h2 {
+  text-align: center;
+  color: #8a57ea;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(172, 168, 168, 0.634);
+}
+.popular-products .best-products-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.popular-products .card-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.743);
+}
+
+
+
+.popular-products .card-product .desc-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-products .card-product .desc-title h3 {
+  color: rgb(72, 71, 71);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.popular-products .card-product .desc-title p {
+  font-size: 12px;
+  color: rgb(121, 120, 120);
+}
+
+.popular-products .card-product a {
+  color: rgb(31, 147, 255);
+
+}
+
+.popular-products .card-product .desc-title span {
+  color: #54a596;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.popular-products .more-pro-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(to right, #8a57ea, #b295e7);
+  color: white;
+  border-radius: 4px;
+  transition: .4s linear;
+}
+.popular-products .more-pro-btn:hover{
+  background-image: linear-gradient(to right, #b295e7, #7f00f6b8);
+   transform: rotate(5deg);
+}
+
+.popular-products .more-pro-btn svg {
+  width: 18px;
+  height: 18px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+/* ============the ads  products posters ============= */
+.products-poster {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.products-poster .posters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+.products-poster .poster {
+  width: 100%;
+}
+
+.products-poster .poster img {
+  width: 100%;
+  border-radius: 6px;
+}
+/* ==== features of our products and website ====== */
+.feartures {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.feartures  .card-feartures{
+ width: 30%;
+ text-align: center;
+ height: fit-content;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ border-bottom: 2px solid #8b57ea7b;
+}
+.feartures  .card-feartures p{
+  color: rgb(156, 155, 155);
+  font-size: 12px;
+
+}
+.feartures  .card-feartures img{
+  margin: auto;
+  width: 50px;
+}
+
+/* ============display the products section================   */
+
+.display-products .title h2{
+    text-align: center;
+    color: #8a57ea;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(172, 168, 168, 0.634);
+
+}
+.display-products .proudacts-cards{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.display-products .proudacts-cards .pro-card{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.display-products .proudacts-cards .pro-card .pro-poster{
+  width: 100%;
+  height: auto;
+  background-color: rgb(181, 205, 231);
+  position: relative;
+  border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+}
+
+
+.display-products .proudacts-cards .pro-card .pro-poster .add-favo{
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.827);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+cursor: pointer;
+}
+.display-products .proudacts-cards .pro-card .pro-poster img{
+  width: 100%;
+  border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+}
+.display-products .proudacts-cards .pro-card  .pro-desc h3{
+ font-weight: bold;
+ text-transform: capitalize;
+  font-size: 13px;
+}
+
+.display-products .proudacts-cards .pro-card  .pro-desc p{
+  color: gray;
+  font-size: 12px;
+}
+.display-products .proudacts-cards .pro-card  .card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display-products .proudacts-cards .pro-card  .card-footer .btn-buy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a57ea;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(139, 87, 234, 0.608) 0px 10px 10px -5px;
+  width:  50px;
+  height: 40px;
+  border-radius: 4px;
+}
+.display-products .proudacts-cards .pro-card  .card-footer .btn-buy a{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.display-products .proudacts-cards .pro-card .pro-info div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.display-products .proudacts-cards .pro-card .pro-info div p{
+  color: gray;
+  text-transform: capitalize;
+  font-size: 10px;
+
+}
+.display-products .proudacts-cards .pro-card .pro-info div  span{
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 10px;
+
+}
+.discover-more-products{
+  width: 300px;
+  height: 45px;
+  background-color: #8a57ea;
+  color: white;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(139, 87, 234, 0.608) 0px 10px 10px -5px;
+
+}
+.discover-more-products a{
+  display: block;
+ width: 100%;
+ height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+text-transform: capitalize;
+font-weight: bold;
+padding: 0px 10px;
+
+
+}
+
+/* Small mobile phones (up to 480px) */
+@media (max-width: 480px) {
+
+  /* Additional styles for small mobile phones */
+}
+
+/* Mobile phones (up to 768px) */
+@media  (max-width: 768px) {
+  
+  .main-section{
+
+  width: 100%;
+  }
+  .popular-products{
+  
+    display: block;
+    
+    width: 100%;
+    
+  }
+    .popular-products .best-products-cards{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .popular-products .best-products-cards .card-product{
+      width: fit-content;
+    }
+
+
+    .display-products .proudacts-cards .pro-card{
+      width: 45%;
+      
+      border: 2px solid orangered;
+    }
+    .popular-products .more-pro-btn {
+      width: 200px;
+      margin: auto;
+      margin-top: 10px;
+      
+    }
+    .products-poster .poster {
+      width: 80%;
+    }
+
+}
+
+/* Tablets (up to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section .text-intro .description h1 {
+    font-size: 30px;
+  }
+  .hero-section {
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .main-section{
+    width: 70%;
+  }
+  .popular-products{
+    width: 27%;
+    font-size: 12px;
+  }
+  
+
+  .display-products .proudacts-cards .pro-card{
+    width: 45%;
+    
+    border: 2px solid orangered;
+  }
+
+
+  /* Additional styles for tablets */
+}

@@ -1,0 +1,133 @@
+.product-details{
+  padding: 20px 10px;
+  background-color: white;
+  margin-top: 10px;
+}
+.product-details .card
+{
+  display: flex;
+  gap: 10px;
+}
+.product-details .card .images-part{
+  width: 40%;
+  position: relative;
+}
+.images-part img{
+  width: 100%;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.details-part{
+  width: 60%;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #dadadadd;
+}
+.details-part .header p svg{
+  color: #5fad8e;
+}
+.details-part .header p{
+  color: gray;
+}
+.details-part .header h1{
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #8023ef;
+}
+.details-part .desc p{
+  font-size: 14px;
+  color: rgb(102, 101, 101);
+}
+.details-part .desc strong{
+  text-transform: capitalize;
+}
+.details-part .price-quantity{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.details-part .price-quantity input{
+   background-color: #f0e8fa;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 2px;
+}
+.details-part .price-quantity .quantity {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.details-part .price-quantity .quantity  span{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-color: #f0e8fa;
+   color: #8023ef;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   font-size: 20px;
+   cursor: pointer;
+}
+.details-part .price-quantity .price p{
+   color: #8023ef;
+   font-size: 20px;
+   text-decoration: underline #8023ef;
+
+}
+
+.pay-add-btn{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  
+}
+.pay-add-btn button{
+  width: 200px;
+  height: 45px;
+  text-transform: capitalize;
+  background-color: #8023ef;
+  /* border-radius: 4px; */
+  color: white;
+}
+.pay-add-btn span{
+font-size: 30px;
+cursor: pointer;
+color: gray;
+}
+.btns{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.btns button{
+  width: 130px;
+  height: 35px;
+  border-radius: 4px;
+  padding: 3px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.btns .delete{
+  background-color: rgba(252, 6, 92, 0.737);
+
+}
+.btns .update{
+  background-color: rgba(6, 155, 6, 0.723);
+}

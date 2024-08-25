@@ -1,0 +1,155 @@
+nav{
+  width: 100% ;
+  height: 80px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+nav .first-part{
+  display: flex;
+}
+nav .first-part input{
+  height: 40px;
+  width: 300px;
+  border-radius: 4px;
+  padding: 4px;
+border: 1px solid rgb(211, 211, 211);
+}
+nav .first-part button{
+  color: white;
+}
+nav .first-part button{
+  height: 40px;
+  padding: 4px;
+  background-color: #9023ef;
+}
+nav .sec-part{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  
+}
+
+
+nav .sec-part .user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  z-index: 9999;
+  position: relative;
+  cursor: pointer;
+}
+nav .sec-part .user img{
+  width: 50px;
+  border-radius: 50%;
+}
+nav .drop-menu{
+  position: relative;
+}
+nav .drop-icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b0adad;
+  color: #b0adad;
+  z-index: 999;
+  position: relative;
+}
+
+nav .drop-list{
+  background-color: white;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  width: 200px;
+  right: 0;
+  top: 35px;
+  opacity: 1;
+  transition: .4s ease-in-out all ;
+  
+}
+nav .login-register-btn{
+  padding: 5px ;
+  border: 1px solid slategray; 
+  border-radius: 20px;
+}
+nav .login-register-btn a{
+  text-decoration: solid #308eeb underline;
+  color: rgb(82, 82, 82);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+nav .user:hover ~ .drop-list{
+  background-color: #4285d3;
+}
+nav .user .drop-icon:hover ~ .drop-list{
+
+  opacity: .9;
+}
+.drop-list:hover ~ .drop-list{
+  opacity: 0.9;
+}
+nav .drop-list::before{
+  position: absolute;
+  content: " ";
+  top: -30px;
+  right: 0;
+  height: 0;
+  width: 0;
+border-width: 15px ;
+border-style: solid;
+  border-color:  transparent transparent rgb(255, 255, 255) transparent ;
+  
+}
+nav .drop-list li{
+  border-bottom: 1px solid #e8e5e5;
+  padding: 5px;
+  text-transform: capitalize;
+}
+nav .drop-list li:hover{
+  background-color: #8023ef;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+
+}
+nav .drop-list.active{
+  display: block;
+}
+nav .drop-list li  {
+  font-size: 13px;
+}
+nav .drop-list li a ,nav .drop-list li button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+nav .drop-list .closeDrop{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.drop-list{
+  transform: scale(0);
+}
+.isActiveMenu{
+transform: scale(1);
+}

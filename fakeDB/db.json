@@ -1,0 +1,36 @@
+
+{
+  "products": [
+    {
+      "id": "1",
+      "productImg": "https://i.pinimg.com/736x/39/f3/c1/39f3c13f07d83b9dbd4cdd533ec7a2d5.jpg",
+      "title": "facebook 2017",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
+      "price": 4,
+      "stock":2000,
+      "soldOut":1231,
+      "rating":4
+    },
+    {
+      "id": "2",
+      "productImg": "https://i.pinimg.com/736x/b5/6a/48/b56a488ed215d206d32a855300366ee1.jpg",
+      "title": "reddit accs",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
+      "stock":500,
+      "soldOut":181,
+      "price": 1.90,
+      "rating":4
+    },
+    {
+      "id": "3",
+      "productImg": "https://i.pinimg.com/736x/72/86/27/728627d3998c72628ae6d7d232df07c9.jpg",
+      "title": "youtube premuim",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
+      "stock":306,
+      "soldOut":211,
+      "price": 50,
+      "rating":4
+    }
+  
+  ]
+}
