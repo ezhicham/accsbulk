@@ -9,7 +9,7 @@ import { signOut, useSession } from "next-auth/react"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 
-
+import Image from "next/image"
 
 
 
@@ -34,13 +34,16 @@ console.log(session)
  
   return (
     <nav className="flex justify-between  ">
+      <div className="brand"><span>ezzghari</span></div>
       {/* search box */}
     <div className="first-part flex items-center gap-3">
-       <div className="catigories">
+    
+      <input type="search" placeholder="search products..." />
+      <button className="search-btn"><FontAwesomeIcon  width={"25px"} icon={ faMagnifyingGlass} /></button>
+    {/* display a drop down for catigory of accounts and services  */}
+      <div className="catigories">
        <FontAwesomeIcon width={"30px"} icon={faBars} />
        </div>
-      <input type="search" placeholder="search products..." />
-      <button><FontAwesomeIcon  width={"25px"} icon={ faMagnifyingGlass} /></button>
     </div>
       {/* icons and user name and user profile */}
     <div className="sec-part">
@@ -53,7 +56,12 @@ console.log(session)
     {status==="authenticated"?   <div className="user flex">
   
     
-      <img   src="https://static.vecteezy.com/system/resources/thumbnails/009/749/751/small_2x/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg" alt="" />
+      <Image   
+      src="https://static.vecteezy.com/system/resources/thumbnails/009/749/751/small_2x/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg"
+      width={"100"}
+      height={"100"}
+      quality={50}
+      alt="" />
       {/* drop menu for user  */}
       <div className="drop-menu" >
         {/* toggle show and hide  the drop down list when click on chervron down  */}

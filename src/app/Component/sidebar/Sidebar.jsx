@@ -1,11 +1,11 @@
 "use client"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./sidebar.css"
-import { faChevronRight, faClockRotateLeft, faHandshake, faHeadset, faHouse, faStore } from "@fortawesome/free-solid-svg-icons"
+import { faChevronRight, faCircleXmark, faClockRotateLeft, faHandshake, faHeadset, faHouse, faStore } from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link"
 import { useState } from "react"
 
-function sidebar() {
+function Sidebar() {
 
   const [hideSidbar,sethideSidbar]=useState("")
   return (
@@ -25,7 +25,8 @@ function sidebar() {
 
 
   }
-  }><FontAwesomeIcon width={"35px"} icon={faChevronRight} /></div>
+  }>
+{hideSidbar==""? <FontAwesomeIcon width={"35px"}  icon={faChevronRight} /> : <FontAwesomeIcon className="text-red-400" width={"35"} icon={faCircleXmark} />}   </div>
   
   
     <div className="nav-brand"><a href="">bulkaccs<span> <FontAwesomeIcon width={"30px"} icon= {faHandshake} /></span></a> </div>
@@ -48,4 +49,4 @@ function sidebar() {
   )
 }
 
-export default sidebar
+export default Sidebar

@@ -7,7 +7,7 @@ function AddProForm({productId}) {
   const [imgUrl, setImgUrl] = useState(null);
   const [title, setTitle] = useState("");
   const [descPro, setDescPro] = useState("");
-  const [dataAccs, setdataAccs] = useState('');
+  const [dataAccs, setdataAccs] = useState("");
   const [price, setPrice] = useState("");
   const [quantity, setQuantity] = useState("");
   
@@ -27,7 +27,7 @@ useEffect(() => {
 .then(response => {
   // Check if the response is ok (status code 200-299)
   if (!response.ok) {
-    throw new Error('Network response was not ok ' + response.statusText);
+    throw new Error("Network response was not ok " + response.statusText);
   }
   // Convert the response to JSON
   return response.json();
@@ -42,7 +42,7 @@ useEffect(() => {
   setaccountsString(data.dataAccs.join("/"))
   console.log("1111111111111111111111")
 
-  console.log(productIDdddd)
+  // console.log(productIDdddd)
   // You can use the data here
   
   // if i admin doesn't change the value of input the default value will be the data object that comming from backend
@@ -53,10 +53,10 @@ useEffect(() => {
 })
 .catch(error => {
   // Handle any errors that occurred during the fetch
-  console.error('There was a problem with the fetch operation:', error);
+  console.error("There was a problem with the fetch operation", error);
 });
 },
-[]
+[productId]
 )
 
 
@@ -127,6 +127,7 @@ useEffect(() => {
           </label>
           {/* Input summarizes a received string using the fewest words possible as title */}
           <input
+          // @ts-ignore
           defaultValue={targetPro.title}
             onChange={(eo) => setTitle(eo.target.value)}
             type="text"
@@ -176,6 +177,7 @@ useEffect(() => {
           </label>
           {/* Text area receives a detailed product description */}
           <input
+            // @ts-ignore
             defaultValue={targetPro.price}
             onChange={(eo) => setPrice(eo.target.value)}
             step={0.1}
@@ -194,6 +196,7 @@ useEffect(() => {
           </label>
           {/* Text area receives a detailed product description */}
           <input
+                // @ts-ignore
                 defaultValue={targetPro.quantity}  
             onChange={(eo) => setQuantity(eo.target.value)}
             type="number"
@@ -209,7 +212,7 @@ useEffect(() => {
         {/* Error and success messages */}
         {erroMsg && (
           <span className="errorStore bg-red-100 text-red-400 p-3 rounded-md">
-            sorry  the product doesn't updated 
+            sorry  the product doesnt updated 
           </span>
         )}
         {success && (

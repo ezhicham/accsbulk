@@ -96,3 +96,9 @@
   color: gray;
   font-size: 14px;
 }
+
+@media (max-width:600px){
+  .footer .info-about-us .brand{
+    width: 100%;
+  }
+}

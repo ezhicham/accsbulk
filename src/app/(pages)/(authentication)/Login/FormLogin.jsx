@@ -4,7 +4,7 @@ import { useState } from "react"
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Spinner from "app/Component/spinner/Spinner";
-function formLogin() {
+function FormLogin() {
   const router=useRouter()
   const [email , setEmail]=useState("")
   const [password , setPassword]=useState("")
@@ -70,4 +70,4 @@ const handleLoginSubmit= async(e) => {
   )
 }
 
-export default formLogin
+export default FormLogin

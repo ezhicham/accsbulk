@@ -10,7 +10,7 @@ function AddProForm() {
   const [imgUrl, setImgUrl] = useState(null);
   const [title, setTitle] = useState("");
   const [descPro, setDescPro] = useState("");
-  const [dataAccs, setdataAccs] = useState('');
+  const [dataAccs, setdataAccs] = useState("");
   const [price, setPrice] = useState("");
   const [quantity, setQuantity] = useState("");
   const [erroMsg, setErroMsg] = useState("");
@@ -81,7 +81,7 @@ if(status=="unauthenticated"){
    if(status=="authenticated"){
     if(session.user.email !== "admin@gmail.com"){
       return(
-        <h1>this page just for admin's</h1>
+        <h1>this page just for admin </h1>
       )
     }
   

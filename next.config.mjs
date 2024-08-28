@@ -12,6 +12,12 @@ export const images = {
     },
     {
       protocol: 'https',
+      hostname: 'static.vecteezy.com',
+      port: '',
+    },
+  
+    {
+      protocol: 'https',
       hostname: 'res.cloudinary.com',
       port: '',
     },

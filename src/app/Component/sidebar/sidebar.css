@@ -2,29 +2,36 @@ aside{
   width: 15%;
   height: 100vh;
   padding: 5px;
+  position: fixed;
+  top: 80px;
+  left: -15%;
+  z-index: 99;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  position: relative;
   background-color: white;
   transition: .4s linear all;
 }
 .aside.hidesidbar{
-  left: -13%;
+  left: 0;
 }
+
 
 .aside .hide-sidbarbtn{
   position: absolute;
-  right: -25px;
+  top: 0;
+  right: -29px;
   width: 30px;
   height: 30px;
-  border-radius: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   padding: 5px;
   display: flex;
   background-color: white;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 83, 0.2) 7px -4px 18px -8px;
+  
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: gray;
+  color: rgb(6, 142, 99);
 
 }
 
@@ -88,11 +95,22 @@ aside .sidebar .nav-menu li a:hover{
 
 /* Mobile phones (up to 768px) */
 @media (max-width: 768px) {
-  aside .sidebar .nav-menu li a{
-    font-size: 10px;
-  }
-  aside .sidebar .nav-menu li a span{
+  
+  aside {
+    padding: 2px;
+    width: 200px;
+    margin-top: 40px;
+    left:-200px ;
     
   }
+  .aside.hidesidbar{
+  
+    left: 0;
+  }
+
+  aside .sidebar .nav-menu li a{
+    font-size: 12px;
+  }
+
   
 }

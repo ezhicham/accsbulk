@@ -7,6 +7,7 @@ import { resolve } from "styled-jsx/css";
 import Products from "./Products";
 import { Suspense } from "react";
 import Spinner from "../Component/spinner/Spinner.jsx";
+import "./home.css"
 
 
 
@@ -15,7 +16,7 @@ const prodcutsArray=[
   id:1,
   proName:"instagram +50 followers",
   proImg:"https://i.pinimg.com/564x/40/8d/85/408d850cac86b310732cfe7a9cca67f8.jpg",
-  proDesc:"  ipsum dolor, sit amet ",
+  proDesc:"  ipsum dolor, sit amet ipsum dolor, ipsum dolor, sit amet ipsum dolor,ipsum dolor, sit amet ipsum dolor ",
   proPrice:5,
   proStock:800,
   proSoldTime:662,
@@ -24,7 +25,7 @@ const prodcutsArray=[
     id:2,
     proName:"instagram +50 followers",
     proImg:"https://i.pinimg.com/564x/40/8d/85/408d850cac86b310732cfe7a9cca67f8.jpg",
-    proDesc:"  ipsum dolor, sit amet ",
+    proDesc:"  ipsum dolor, sit amet ipsum dolor, sit amet ipsum dolor, ipsum dolor, sit amet ipsum dolor,ipsum dolor, sit amet ipsum dolor  ",
     proPrice:5,
     proStock:800,
     proSoldTime:662,
@@ -33,7 +34,7 @@ const prodcutsArray=[
       id:2,
       proName:"instagram +50 followers",
       proImg:"https://i.pinimg.com/564x/40/8d/85/408d850cac86b310732cfe7a9cca67f8.jpg",
-      proDesc:"  ipsum dolor, sit amet ",
+      proDesc:"  ipsum dolor, sit amet  ipsum dolor, sit amet ipsum dolor, ipsum dolor, sit amet ipsum dolor,ipsum dolor, sit amet ipsum dolor",
       proPrice:5,
       proStock:800,
       proSoldTime:662,
@@ -41,7 +42,7 @@ const prodcutsArray=[
         id:2,
         proName:"instagram +50 followers",
         proImg:"https://i.pinimg.com/564x/40/8d/85/408d850cac86b310732cfe7a9cca67f8.jpg",
-        proDesc:"  ipsum dolor, sit amet ",
+        proDesc:"  ipsum dolor, sit amet  ipsum dolor, sit amet ipsum dolor, ipsum dolor, sit amet ipsum dolor,ipsum dolor, sit amet ipsum dolor",
         proPrice:5,
         proStock:800,
         proSoldTime:662,
@@ -59,11 +60,11 @@ const prodcutsArray=[
 
 
   return (
-    <main>
-      <div className="hero-section  ">
-        <div className="main-section">
+    
+      <main className="main-content">
+        <div className="main-section flex">
           {/*========= intro text for home page section=============  */}
-          <section className="text-intro ">
+          <section className="hero-section ">
 
 
             <div className="overlay">
@@ -87,18 +88,18 @@ const prodcutsArray=[
             {/* card section for each features */}
             <section className="card-feartures">
               <img src="../images/6371914.png" alt="" />
-              <p>Lorem ipsum dolor, sit amet </p>
+              <p>product will deliver to you very fast </p>
             </section>
             {/* card section for each features */}
             <section className="card-feartures">
               <img src="../images/14488615.png" alt="" />
-              <p>Lorem ipsum dolor, sit amet </p>
+              <p>warranty and safe transiction </p>
             </section>
 
             {/* card section for each features */}
             <section className="card-feartures">
               <img src="../images/10319754.png" alt="" />
-              <p>Lorem ipsum dolor, sit amet </p>
+              <p>cheap and hight quality accs </p>
             </section>
 
           </section>
@@ -129,7 +130,7 @@ const prodcutsArray=[
 
 
         { /* ===============the best products in our website second side ========= */}
-        <div className="popular-products bg-orange-500">
+        <div className="popular-products ">
 
           <div className="product-title">
             <h2>best products</h2>
@@ -142,7 +143,7 @@ const prodcutsArray=[
           <img width={30} src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" alt="" />
           <div className="desc-title">
             <h3>instagram 2012</h3>
-            <p dangerouslySetInnerHTML={{ __html: item.proDesc }} />
+            <p>{item.proDesc.slice(0,40)}...</p>
             <span>12.3 USD</span>
           </div>
           <a href="">
@@ -161,42 +162,17 @@ const prodcutsArray=[
           </a>
 
 
-           {/* ========== Apng posters for ads for other website ========  */}
-          <div className="products-poster">
-            <div className="title">
-              <h2>ads products</h2>
-            </div>
-
-
-
-            {/* poster of products and adversting part */}
-            <div className="posters">
-
-
-              <a href="" className="poster">
-                <img src="https://i.pinimg.com/736x/5e/58/31/5e5831368f4778eb68310ff6eef756a3.jpg" alt="" />
-
-              </a>
-
-              {/* poster of product and adversting part */}
-              <a href="" className="poster">
-                <img src="https://i.pinimg.com/736x/b6/8d/37/b68d37447bde9b019e9f0952ff30c4b7.jpg" alt="" />
-
-              </a>
-
-            </div>
-          </div>
-
+           
 
         </div>
 
 
-      </div>
+      </main>
 
 
 
   
-    </main>
+  
   );
 }
 

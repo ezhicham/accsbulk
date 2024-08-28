@@ -1,9 +1,10 @@
 import { Inter, Poppins , Montserrat} from "next/font/google";
-import "../app/(home)/globals.css";
+
 import Navbar from "./Component/navbar/Navbar";
 import Sidebar from "./Component/sidebar/Sidebar.jsx"
 import Footer from "./Component/footer/Footer";
 import AuthProvider from "./providers/AuthProvider";
+import "./global.css"
 import ToTop from "./Component/toTop/ToTop";
 const montserrat = Montserrat({ subsets: ["latin"],
   weight:["400","400","600","700"]
@@ -24,17 +25,17 @@ export default function RootLayout({ children }) {
 
 
       <AuthProvider>
-       <div className="container flex gap-5 ">
+       <div className="container ">
           {/* the sidebar  */}
         
-          <Sidebar/>
+        
     
 
-        {/* navbar and main content  */}
-        <div className="main-content  ">
+        
           <Navbar/>
+          <Sidebar/>
            {children}
-        </div>
+      
 
 
 

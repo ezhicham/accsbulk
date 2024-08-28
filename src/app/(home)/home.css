@@ -1,27 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 
 
 /********* table of style */
@@ -31,51 +7,44 @@
 /* ============the side part to display best products ============= */
 /* ============the ads  products posters ============= */
 /* ==== features of our products ====== */
-body {
-  background-color: #cccccc3b;
 
-}
-/* ============the main container ============= */
-.container {
-  max-width: 100%;
 
-}
+
 /* main content from layout page */
 .main-content {
-  width: 100%;
-  border: 2px solid green;
-
-}
-/* ============the hero section ============= */
-.hero-section {
+  width:98vw;
+  margin: auto;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-
+  
 
 }
+
 /* main section contain hero section features ,display products  */
 .main-section{
   display: flex;
   flex-direction: column;
-  width: 74%;
+  width: 80%;
+  border:  dashed orangered 2px;
   
+
 }
 
 /* ============the hero section text and paragraph to intro the website ============= */
 
-.hero-section .text-intro {
+.hero-section {
   background-image: url("https://i.pinimg.com/564x/cf/c8/b3/cfc8b3ebe722eeb11ad29db2ad88a3a1.jpg");
   background-position: center;
   background-size: cover;
   height: fit-content;
   border-radius: 10px;
-
+  width: 100%;
+  
 }
 
-.hero-section .text-intro .overlay {
+.hero-section .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.44);
@@ -84,39 +53,48 @@ body {
   border-radius: 10px;
 }
 
-.hero-section .text-intro .description {
+.hero-section .description {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  text-align: center;
 }
 
-.hero-section .text-intro .description h1 {
+.hero-section .description h1 {
   font-size: 40px;
   color: white;
   text-transform: capitalize;
+  font-weight: bold;
   line-height: 40px;
 }
 
-.hero-section .text-intro .description p {
+.hero-section .description p {
   color: rgb(225, 219, 219);
+  width: 60%;
 }
 
-.hero-section .text-intro .description button {
-  background-color: #f56a79;
+.hero-section .description button {
+  
+  background-image: linear-gradient(to right ,#f56a79,#d307f3);
   padding: 5px;
   color: white;
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 45px;
   border-radius: 4px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
 }
 /* ============the side part to display best and popular products and ads products for other websites ============= */
 .popular-products {
-  background-color: #f56a79;
-  width: 23%;
+  /* background-color: #f56a79; */
+  width: 19%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
   
   
 }
@@ -137,14 +115,14 @@ body {
 
 .popular-products .card-product {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   gap: 5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 5px;
+  padding: 2px;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.743);
+  /* background-color: rgba(255, 255, 255, 0.743); */
+  background-color: white;
 }
 
 
@@ -162,7 +140,7 @@ body {
 }
 
 .popular-products .card-product .desc-title p {
-  font-size: 12px;
+  font-size: 10px;
   color: rgb(121, 120, 120);
 }
 
@@ -202,39 +180,20 @@ body {
   border: 1px solid white;
   border-radius: 50%;
 }
-/* ============the ads  products posters ============= */
-.products-poster {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.products-poster .posters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
 
-}
-
-.products-poster .poster {
-  width: 100%;
-}
-
-.products-poster .poster img {
-  width: 100%;
-  border-radius: 6px;
-}
 /* ==== features of our products and website ====== */
 .feartures {
   width: 100%;
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   height: fit-content;
 }
 
 .feartures  .card-feartures{
- width: 30%;
+ width: fit-content;
  text-align: center;
  height: fit-content;
  padding: 5px;
@@ -249,7 +208,7 @@ body {
 }
 .feartures  .card-feartures img{
   margin: auto;
-  width: 50px;
+  width: 30px;
 }
 
 /* ============display the products section================   */
@@ -270,6 +229,7 @@ body {
   flex-wrap: wrap;
   margin-top: 10px;
 }
+/* card of product */
 .display-products .proudacts-cards .pro-card{
   width: 30%;
   display: flex;
@@ -380,80 +340,58 @@ padding: 0px 10px;
 
 }
 
-/* Small mobile phones (up to 480px) */
-@media (max-width: 480px) {
-
-  /* Additional styles for small mobile phones */
-}
-
-/* Mobile phones (up to 768px) */
-@media  (max-width: 768px) {
-  
+@media (max-width:998px) {
   .main-section{
-
-  width: 100%;
-  }
-  .popular-products{
-  
-    display: block;
-    
     width: 100%;
+  }
+  .popular-products .best-products-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .popular-products {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+
+  }
+  .popular-products .card-product {
+    width: 300px;
+    justify-content: space-between;
     
   }
-    .popular-products .best-products-cards{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-  
-    .popular-products .best-products-cards .card-product{
-      width: fit-content;
-    }
-
-
-    .display-products .proudacts-cards .pro-card{
-      width: 45%;
-      
-      border: 2px solid orangered;
-    }
-    .popular-products .more-pro-btn {
-      width: 200px;
-      margin: auto;
-      margin-top: 10px;
-      
-    }
-    .products-poster .poster {
-      width: 80%;
-    }
-
+  .popular-products .more-pro-btn {
+    width: 200px;
+    margin: auto;
+  }
 }
 
-/* Tablets (up to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hero-section .text-intro .description h1 {
-    font-size: 30px;
-  }
-  .hero-section {
-    justify-content: space-between;
-    gap: 2px;
-  }
-  .main-section{
-    width: 70%;
+@media (max-width:600px){
+  /* .main-content {
+    width: 98vw;
+  } */
+  .hero-section .description p {
+    width: 100%;
   }
   .popular-products{
-    width: 27%;
-    font-size: 12px;
+    width:100%;
+    margin: auto;
+    margin-top: 20px;
   }
-  
-
+  .popular-products .card-product{
+    width: fit-content;
+    padding: 3px;
+  }
+  .display-products .proudacts-cards{
+    gap: 3px;
+  }
   .display-products .proudacts-cards .pro-card{
-    width: 45%;
-    
-    border: 2px solid orangered;
+    width: 48%;
   }
-
-
-  /* Additional styles for tablets */
+  .display-products .proudacts-cards .pro-card .pro-poster{
+    /* height: 50px; */
+    margin: auto;
+  }
 }

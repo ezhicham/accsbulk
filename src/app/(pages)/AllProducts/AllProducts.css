@@ -1,12 +1,15 @@
+.filter{
+  margin-top: 150px;
+}
 .all-Products {
   display: flex;
   justify-content: center;
   align-items: start;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .all-Products .pro-card{
-  width: 30%;
+  width: 200px;
   display: flex;
   flex-direction: column;
    border-top-left-radius: 6px;
@@ -100,4 +103,14 @@ cursor: pointer;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(139, 87, 234, 0.608) 0px 10px 10px -5px;
 
+}
+
+
+@media (max-width:600px) {
+  .all-Products {
+    gap: 5px;
+  }
+  .all-Products .pro-card{
+    width: 48%;
+  }
 }
