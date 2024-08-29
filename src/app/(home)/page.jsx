@@ -88,18 +88,18 @@ const prodcutsArray=[
             {/* card section for each features */}
             <section className="card-feartures">
               <img src="../images/6371914.png" alt="" />
-              <p>product will deliver to you very fast </p>
+              <p>fast delivery </p>
             </section>
             {/* card section for each features */}
             <section className="card-feartures">
               <img src="../images/14488615.png" alt="" />
-              <p>warranty and safe transiction </p>
+              <p>warranty and safe </p>
             </section>
 
             {/* card section for each features */}
             <section className="card-feartures">
               <img src="../images/10319754.png" alt="" />
-              <p>cheap and hight quality accs </p>
+              <p>cheap & HQ</p>
             </section>
 
           </section>

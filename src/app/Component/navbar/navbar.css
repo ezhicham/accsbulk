@@ -164,13 +164,16 @@ transform: scale(1);
 
 @media (max-width:600px){
   nav{
+    display: none;
+    position: absolute;
     width: 100vw;
+    height: 100vh;
     overflow: hidden;
     display: flex !important;
     flex-direction: column-reverse;
-    
     align-items: center !important;
     height: fit-content;
+    padding: 5px;
     gap: 5px;
     
   }

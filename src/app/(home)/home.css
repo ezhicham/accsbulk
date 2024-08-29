@@ -372,6 +372,9 @@ padding: 0px 10px;
   /* .main-content {
     width: 98vw;
   } */
+  .hero-section .description h1{
+    width: 100%;
+  }
   .hero-section .description p {
     width: 100%;
   }

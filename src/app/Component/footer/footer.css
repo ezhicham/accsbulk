@@ -85,6 +85,7 @@
 .footer .payment-method-website{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 50px;
 
@@ -92,6 +93,7 @@
 .footer .payment-method-website .payment strong{
   color: #8a57ea;
   text-transform: capitalize;
+  font-size: 12px;
   
 }
 
