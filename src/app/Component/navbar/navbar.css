@@ -1,9 +1,9 @@
 nav{
   width: 100% ;
   height: 80px;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 9999; */
   padding: 5px 20px;
   display: flex;
   align-items: center;
@@ -43,8 +43,6 @@ nav .sec-part .user{
   display: flex;
   align-items: center;
   gap: 10px;
-  
-  z-index: 9999;
   position: relative;
   cursor: pointer;
 }
@@ -54,6 +52,8 @@ nav .sec-part .user img{
 }
 nav .drop-menu{
   position: relative;
+  z-index: 9999;
+  
 }
 nav .drop-icon{
   width: 20px;
@@ -78,6 +78,7 @@ nav .drop-list{
   top: 35px;
   opacity: 1;
   transition: .4s ease-in-out all ;
+  z-index: 999;
   
 }
 nav .login-register-btn{
@@ -165,28 +166,35 @@ transform: scale(1);
 @media (max-width:600px){
   nav{
     
-    position: absolute;
+    
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex !important;
-    flex-direction: column-reverse;
-    align-items: center !important;
-    height: fit-content;
-    padding: 5px;
+    height:60px;
+    /* overflow-x: hidden; */
+    /* display: flex !important;
+    flex-direction: column-reverse; */
+    /* justify-content: space-between; */
+    /* align-items: center !important; */
+    /* height: fit-content; */
+    /* padding: 5px;
     gap: 5px;
+   */
+    /* z-index: 999; */
     /* display: none;
     opacity: 0; */
     
   }
-  
+  nav .first-part{
+    display: none;
+  }
   nav .sec-part{
     width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
-  border-bottom: 1px solid rgb(233, 233, 233);
+
   padding-bottom: 5px;
 
+  }nav .sec-part .user img{
+    width: 40px;
   }
 }

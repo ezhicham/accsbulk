@@ -34,7 +34,7 @@ console.log(session)
  
   return (
     <nav className="flex justify-between  ">
-      <div className="brand"><span>ezzghari</span></div>
+      {/* <div className="brand"><span>ezzghari</span></div> */}
       {/* search box */}
     <div className="first-part flex items-center gap-3">
     
