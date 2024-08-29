@@ -12,29 +12,29 @@ function Footer() {
       {/* our position */}
         <div className="find-us flex  gap-2">
         <FontAwesomeIcon width={"20px"} className='text-violet-500' icon={faLocationDot} />
-          <div>
+          <article>
           <span>find us</span>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
+          </article>
         </div>
       
         {/* our position */}
         <div className="number flex gap-2">
         <FontAwesomeIcon width={"20px"} className='text-violet-500' icon={faSquarePhone} />
-          <div>
+          <article>
           <span>number  phone</span>
           <p>+212620438734</p>
-          </div>
+          </article>
         </div>
 
         {/* our email */}
         <div className="email flex gap-2">
       
         <FontAwesomeIcon width={"20px"} className='text-violet-500' icon={faEnvelope} />
-          <div>
+          <article>
           <span>email us</span>
           <p>zghariservices@gmail.com</p>
-          </div>
+          </article>
         </div>
 
       </section>

@@ -2,15 +2,18 @@
   width: 100%;
   height:fit-content;
   margin-top: 50px;
-  border:  1px solid grey;
-  padding: 10px 100px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px 50px;
 }
 .footer .contact-section{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
+}
+.footer .contact-section div {
+  width: 30%;
 }
 .footer .contact-section div span{
   color: #8a57ea;
@@ -98,7 +101,27 @@
 }
 
 @media (max-width:600px){
+  .footer{
+    padding: 10px;
+    
+  }
+  .footer .contact-section{
+    display: flex;
+  
+  }
+  .footer .contact-section div {
+    width: 45%;
+    /* background-color: #8a57ea; */
+  }
   .footer .info-about-us .brand{
     width: 100%;
+    text-align: center;
   }
+  .footer .useful-links{
+    align-items: center;
+  }
+  .footer .social-accs{
+    width: 100%;
+  }
+
 }

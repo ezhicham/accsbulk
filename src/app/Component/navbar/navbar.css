@@ -164,6 +164,8 @@ transform: scale(1);
 
 @media (max-width:600px){
   nav{
+    width: 100vw;
+    overflow: hidden;
     display: flex !important;
     flex-direction: column-reverse;
     
@@ -172,9 +174,7 @@ transform: scale(1);
     gap: 5px;
     
   }
-  nav .first-part{
   
-  }
   nav .sec-part{
     width: 100%;
   display: flex;

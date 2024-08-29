@@ -388,10 +388,7 @@ padding: 0px 10px;
     gap: 3px;
   }
   .display-products .proudacts-cards .pro-card{
-    width: 48%;
+    width: 100%;
   }
-  .display-products .proudacts-cards .pro-card .pro-poster{
-    /* height: 50px; */
-    margin: auto;
-  }
+  
 }
