@@ -373,6 +373,9 @@ padding: 0px 10px;
   /* .main-content {
     width: 98vw;
   } */
+  .hero-section .overlay {
+    padding: 5px;
+  }
   .hero-section .description h1{
     width: 100%;
   }
@@ -388,11 +391,21 @@ padding: 0px 10px;
     width: fit-content;
     padding: 3px;
   }
+
+  /* display the products */
   .display-products .proudacts-cards{
-    gap: 3px;
+    justify-content: space-between;
   }
   .display-products .proudacts-cards .pro-card{
-    width: 100%;
+    width: 49%;
   }
+  .display-products .proudacts-cards .pro-card  .pro-desc h3{
+    font-size: 11px;
+
+  }
+  .display-products .proudacts-cards .pro-card  .pro-desc{
+    font-size: 10px;
+  }
+  
   
 }
