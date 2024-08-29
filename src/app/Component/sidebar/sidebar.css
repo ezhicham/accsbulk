@@ -86,12 +86,7 @@ aside .sidebar .nav-menu li a:hover{
   color: white;
 }
 
-/* Tablets (up to 1024px) */
-@media  (max-width: 1024px) {
-  aside .sidebar .nav-brand a{
-    font-size: 12px;
-  }
-}
+
 
 /* Mobile phones (up to 768px) */
 @media (max-width: 768px) {
@@ -104,7 +99,6 @@ aside .sidebar .nav-menu li a:hover{
     
   }
   .aside.hidesidbar{
-  
     left: 0;
   }
 
