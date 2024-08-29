@@ -96,8 +96,8 @@ console.log(session)
 
        </div>
        </div>
-    <div className="cart"><a href=""><FontAwesomeIcon width={'20px'} icon={faBagShopping} /></a></div>
-    <div className="notification"><span><FontAwesomeIcon width={'20px'} icon={faBell} /></span></div>
+    <div className="cart"><a href=""><FontAwesomeIcon width={'20px'} style={{fontSize:"20px"}} icon={faBagShopping} /></a></div>
+    <div className="notification"><span><FontAwesomeIcon width={'20px'} style={{fontSize:"20px"}} icon={faBell} /></span></div>
     
        
 
