@@ -251,13 +251,16 @@ nav  .catigories .catigory-drop-menu{
 
   }
   .catigories .catigory-drop-menu {
-    gap:10px;
+    gap:5px;
   }
   .catigories .catigory-drop-menu .catigory-icons a p{
     font-size: 10px;
   }
   .catigories .catigory-drop-menu  .catigory h3{
     font-size: 12px;
+  }
+  .catigories .catigory-drop-menu  .catigory-icons a svg{
+    font-size: 14px;
   }
   nav .first-part{
     display: none;
