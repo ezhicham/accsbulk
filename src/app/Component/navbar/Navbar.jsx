@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./navbar.css"
 
-import { faBagShopping, faBars, faChevronDown, faCircleInfo, faMagnifyingGlass, faPenToSquare, faPlus, faTrashCan, faXmark } from "@fortawesome/free-solid-svg-icons"
+import { fa8, faBagShopping, faBars, faBarsStaggered, faChevronDown, faCircleInfo, faMagnifyingGlass, faPenToSquare, faPersonRifle, faPlus, faStar, faTrashCan, faXmark } from "@fortawesome/free-solid-svg-icons"
 import { faBell } from "@fortawesome/free-regular-svg-icons"
 import Link from "next/link"
 import { signOut, useSession } from "next-auth/react"
@@ -10,6 +10,7 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 
 import Image from "next/image"
+import { faFacebook, faInstagram, faPinterest, faReddit, faSteam, faTiktok, faTwitch, faTwitter, faVk } from "@fortawesome/free-brands-svg-icons"
 
 
 
@@ -40,13 +41,61 @@ console.log(session)
     
       <input type="search" placeholder="search products..." />
       <button className="search-btn"><FontAwesomeIcon  width={"25px"} icon={ faMagnifyingGlass} /></button>
-    {/* display a drop down for catigory of accounts and services  */}
-      <div className="catigories">
-       <FontAwesomeIcon width={"30px"} icon={faBars} />
-       </div>
+    
     </div>
       {/* icons and user name and user profile */}
     <div className="sec-part">
+      {/* display a drop down for catigory of accounts and services  */}
+      <div className="catigories">
+      <FontAwesomeIcon className="menu-catigory-icon" icon={faBarsStaggered} />
+       <div className="catigory-drop-menu flex gap-3">
+        {/* accounts sections  */}
+        <div className="accounts catigory">
+          <h3>accounts</h3>
+          <div className="catigory-icons">
+            <a href=""><FontAwesomeIcon icon={faTwitter} /><p>twitter</p></a>
+            <a href=""><FontAwesomeIcon icon={faInstagram} /><p>instagram</p></a>
+            <a href=""><FontAwesomeIcon icon={faPinterest} /><p>pinterest</p></a>
+            <a href=""><FontAwesomeIcon icon={faTiktok} /><p>tiktok</p></a>
+            <a href=""><FontAwesomeIcon icon={faReddit} /><p>reddit</p></a>
+            <a href=""><FontAwesomeIcon icon={faFacebook} /><p>facebook</p></a>
+            <a href=""><FontAwesomeIcon icon={faVk} /><p>vk</p></a>
+            <a href=""><FontAwesomeIcon icon={faTwitch} /><p>twitch</p></a>
+          </div>
+        </div>
+
+   {/* games sections  */}
+      <div className="games catigory">
+          <h3>games</h3>
+          <div className="catigory-icons">
+            <a href=""><FontAwesomeIcon icon={faSteam} /><p>steam</p></a>
+            <a href=""><FontAwesomeIcon icon={faSteam } /><p>gta 5</p></a>
+            <a href=""><FontAwesomeIcon icon={faSteam} /><p>valorant</p></a>
+            <a href=""><FontAwesomeIcon icon={faSteam} /><p>fifa 25</p></a>
+            <a href=""><FontAwesomeIcon icon={faSteam} /><p>pes 25</p></a>
+            <a href=""><FontAwesomeIcon icon={fa8} /><p>8Ball</p></a>
+            <a href=""><FontAwesomeIcon icon={faSteam} /><p>cs</p></a>
+            <a href=""><FontAwesomeIcon icon={faSteam} /><p>fortnite</p></a>
+          </div>
+        </div>
+
+        {/* games sections  */}
+      <div className="services catigory">
+          <h3>services</h3>
+          <div className="catigory-icons">
+            <a href=""><FontAwesomeIcon icon={faStar} /><p>reels bundels</p></a>
+            <a href=""><FontAwesomeIcon icon={faStar } /><p>canva templates</p></a>
+            <a href=""><FontAwesomeIcon icon={faStar} /><p>web developement</p></a>
+            <a href=""><FontAwesomeIcon icon={faStar} /><p>ux design</p></a>
+            <a href=""><FontAwesomeIcon icon={faStar} /><p>app mobile</p></a>
+            <a href=""><FontAwesomeIcon icon={faStar} /><p>social media manager</p></a>
+            <a href=""><FontAwesomeIcon icon={faPersonRifle} /><p>followers</p></a>
+            <a href=""><FontAwesomeIcon icon={faSteam} /><p>proxy</p></a>
+          </div>
+        </div>
+
+       </div>
+       </div>
     <div className="cart"><a href=""><FontAwesomeIcon width={'20px'} icon={faBagShopping} /></a></div>
     <div className="notification"><span><FontAwesomeIcon width={'20px'} icon={faBell} /></span></div>
     

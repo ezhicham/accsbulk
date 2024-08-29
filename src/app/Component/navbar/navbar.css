@@ -160,6 +160,79 @@ nav .drop-list .closeDrop{
 transform: scale(1);
 }
 
+
+/* catigorie drop menus */
+
+.catigories{
+  position: relative;
+  
+}
+.catigories .menu-catigory-icon{
+  font-size: 25px;
+  cursor: pointer;
+}
+.catigories .catigory-drop-menu{
+  position: absolute;
+  width: 600px;
+  height: 0px;
+  overflow: hidden;
+   top: 25px;
+   right: 0; 
+   border-radius: 6px;
+  background-color: #f1feff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  transition: .4s ease-in-out all;
+}
+
+.catigories .menu-catigory-icon:hover ~ .catigory-drop-menu{
+  height: 500px;
+  padding: 10px;
+  
+
+}
+.catigories .catigory-drop-menu:hover{
+  height: 500px;
+  padding: 10px;
+}
+
+.catigories .catigory-drop-menu  .catigory h3{
+  text-transform: capitalize;
+  color: #008c99;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.catigories .catigory-drop-menu .catigory-icons a{
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 2px;
+  border-radius: 4px;
+  transition: 0.4s linear all;
+}
+.catigories .catigory-drop-menu .catigory-icons a:hover{
+  background-color: #b1ebf0;
+}
+.catigories .catigory-drop-menu .catigory-icons a p{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(56, 56, 56);
+}
+.catigories .catigory-drop-menu .catigory-icons a svg{
+  width: 40px;
+  font-size: 20px;
+  color: #008c99d5;
+
+}
+.catigories .catigory-drop-menu .services .catigory-icons a svg{
+  color: goldenrod;
+}
 /* media query  */
 
 
@@ -169,19 +242,22 @@ transform: scale(1);
     
     width: 100vw;
     height:60px;
-    /* overflow-x: hidden; */
-    /* display: flex !important;
-    flex-direction: column-reverse; */
-    /* justify-content: space-between; */
-    /* align-items: center !important; */
-    /* height: fit-content; */
-    /* padding: 5px;
-    gap: 5px;
-   */
-    /* z-index: 999; */
-    /* display: none;
-    opacity: 0; */
+
     
+  }
+nav  .catigories .catigory-drop-menu{
+  left: 0;
+  max-width: fit-content;
+
+  }
+  .catigories .catigory-drop-menu {
+    gap:10px;
+  }
+  .catigories .catigory-drop-menu .catigory-icons a p{
+    font-size: 10px;
+  }
+  .catigories .catigory-drop-menu  .catigory h3{
+    font-size: 12px;
   }
   nav .first-part{
     display: none;

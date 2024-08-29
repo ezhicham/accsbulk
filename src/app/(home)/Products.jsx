@@ -21,7 +21,7 @@ function Products() {
           }
         })
         .then(fetchedProducts => {
-          setData(fetchedProducts.productsDB.slice(0, 3)) // Only take the first 3 products
+          setData(fetchedProducts.productsDB.slice(0, 4)) // Only take the first 3 products
         })
         .catch(error => {
           console.error('Error fetching products:', error);
