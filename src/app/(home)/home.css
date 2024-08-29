@@ -225,9 +225,10 @@
 }
 .display-products .proudacts-cards{
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: baseline;
   flex-wrap: wrap;
+  gap: 5px;
   margin-top: 10px;
 }
 /* card of product */
@@ -277,6 +278,9 @@ cursor: pointer;
 .display-products .proudacts-cards .pro-card  .pro-desc p{
   color: gray;
   font-size: 12px;
+}
+.display-products .proudacts-cards .pro-card  .pro-desc span{
+  font-size: 14px;
 }
 .display-products .proudacts-cards .pro-card  .card-footer{
   display: flex;
@@ -406,6 +410,9 @@ padding: 0px 10px;
   .display-products .proudacts-cards .pro-card  .pro-desc{
     font-size: 10px;
   }
+  .display-products  .price{
+  font-size: 12px;
   
+  }
   
 }
