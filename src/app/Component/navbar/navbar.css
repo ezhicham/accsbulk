@@ -172,28 +172,29 @@ transform: scale(1);
 }
 .catigories .catigory-drop-menu{
   position: absolute;
-  width: 600px;
+  width: 80vw;
   height: 0px;
   overflow: hidden;
    top: 25px;
-   right: 0; 
+   right: 50%;
+  transform: translateX(10%);
    border-radius: 6px;
   background-color: #f1feff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  z-index: 9999;
+  z-index: 999 !important;
   display: flex;
   justify-content: space-between;
   transition: .4s ease-in-out all;
 }
 
 .catigories .menu-catigory-icon:hover ~ .catigory-drop-menu{
-  height: 500px;
+  height: fit-content;
   padding: 10px;
   
 
 }
 .catigories .catigory-drop-menu:hover{
-  height: 500px;
+  height: fit-content;
   padding: 10px;
 }
 

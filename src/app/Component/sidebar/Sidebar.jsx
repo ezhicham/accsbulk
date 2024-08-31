@@ -1,7 +1,7 @@
 "use client"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./sidebar.css"
-import { faChevronRight, faCircleXmark, faClockRotateLeft, faHandshake, faHeadset, faHouse, faStore } from "@fortawesome/free-solid-svg-icons"
+import { faBriefcase, faChevronRight, faCircleXmark, faClockRotateLeft, faCode, faCoins, faHandshake, faHeadset, faHouse, faNewspaper, faStore, faTicket, faUsersViewfinder } from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -33,14 +33,13 @@ function Sidebar() {
       <ul className="nav-menu">
         <li><Link href="/"><FontAwesomeIcon width={"15px"} icon={faHouse} /><span>home</span></Link></li>
         <li><Link href="/AllProducts"><FontAwesomeIcon width={"15px"} icon={faStore} /><span>products</span></Link></li>
-        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>products</span></a></li>
-        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>services</span></a></li>
-        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>blogs</span></a></li>
-        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>earn money</span></a></li>
-        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>devlopement</span></a></li>
-        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>sellers</span></a></li>
+        <li><Link href="/myservices"><FontAwesomeIcon width={"15px"} icon={faBriefcase} /><span>services</span></Link></li>
+        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faNewspaper} /><span>blogs</span></a></li>
+        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faCoins} /><span>earn money</span></a></li>
+        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faCode} /><span>devlopement</span></a></li>
+        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faUsersViewfinder} /><span>become seller</span></a></li>
         <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>support </span></a></li>
-        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faHeadset} /><span>tickeck</span></a></li>
+        <li><a href=""><FontAwesomeIcon width={"15px"} icon={faTicket} /><span>ticket</span></a></li>
   
       </ul>
     </div>

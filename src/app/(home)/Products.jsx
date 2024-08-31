@@ -36,11 +36,12 @@ function Products() {
       {data.map((item) => (
         <article key={item._id} title={item.title} className="pro-card">
           {/* the poster image for product */}
-          <div className="pro-poster">
-            {/* add to favorite */}
-            <div className="add-favo">
+          <div className="add-favo">
               <FontAwesomeIcon className="text-slate-600" width={"20px"} icon={faHeart} />
             </div>
+          <div className="pro-poster">
+            {/* add to favorite */}
+          
             <Image
               src={item.imgUrl}
               width={500}

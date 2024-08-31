@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./navbar.css"
 
-import { fa8, faBagShopping, faBars, faBarsStaggered, faChevronDown, faCircleInfo, faMagnifyingGlass, faPenToSquare, faPersonRifle, faPlus, faStar, faTrashCan, faXmark } from "@fortawesome/free-solid-svg-icons"
+import { fa8, faBagShopping, faBars, faBarsStaggered, faChevronDown, faCircleInfo, faCrosshairs, faFootball, faFootballBall, faFutbolBall, faGamepad, faMagnifyingGlass, faPenToSquare, faPersonRifle, faPlus, faStar, faTrashCan, faWind, faXmark } from "@fortawesome/free-solid-svg-icons"
 import { faBell } from "@fortawesome/free-regular-svg-icons"
 import Link from "next/link"
 import { signOut, useSession } from "next-auth/react"
@@ -10,7 +10,7 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 
 import Image from "next/image"
-import { faFacebook, faInstagram, faPinterest, faReddit, faSteam, faTiktok, faTwitch, faTwitter, faVk } from "@fortawesome/free-brands-svg-icons"
+import { faCpanel, faFacebook, faInstagram, faPinterest, faPlaystation, faReddit, faSteam, faTiktok, faTwitch, faTwitter, faVk } from "@fortawesome/free-brands-svg-icons"
 
 
 
@@ -69,13 +69,14 @@ console.log(session)
           <h3>games</h3>
           <div className="catigory-icons">
             <a href=""><FontAwesomeIcon icon={faSteam} /><p>steam</p></a>
-            <a href=""><FontAwesomeIcon icon={faSteam } /><p>gta 5</p></a>
-            <a href=""><FontAwesomeIcon icon={faSteam} /><p>valorant</p></a>
-            <a href=""><FontAwesomeIcon icon={faSteam} /><p>fifa 25</p></a>
-            <a href=""><FontAwesomeIcon icon={faSteam} /><p>pes 25</p></a>
+            <a href=""><FontAwesomeIcon icon={faGamepad } /><p>gta 5</p></a>
+            <a href=""><FontAwesomeIcon icon={faGamepad} /><p>valorant</p></a>
+            <a href=""><FontAwesomeIcon icon={faPlaystation} /><p>fifa 25</p></a>
+            <a href=""><FontAwesomeIcon icon={faFutbolBall} /><p>pes 25</p></a>
             <a href=""><FontAwesomeIcon icon={fa8} /><p>8Ball</p></a>
-            <a href=""><FontAwesomeIcon icon={faSteam} /><p>cs</p></a>
-            <a href=""><FontAwesomeIcon icon={faSteam} /><p>fortnite</p></a>
+            <a href=""><FontAwesomeIcon icon={faPersonRifle} /><p>cs</p></a>
+            <a href=""><FontAwesomeIcon icon={faCrosshairs} /><p>fortnite</p></a>
+            
           </div>
         </div>
 
