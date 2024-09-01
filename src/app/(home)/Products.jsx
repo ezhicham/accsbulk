@@ -1,18 +1,18 @@
 "use client"
 
-import { faCartShopping, faHeart, faStar } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
+import { faCartShopping, faHeart, faStar } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Link from "next/link"
 import Image from "next/image";
-import { notFound } from 'next/navigation'
-import { useEffect, useState } from 'react';
+import { notFound } from "next/navigation"
+import { useEffect, useState } from "react";
 
 function Products() {
   const [data, setData] = useState([])
 
   useEffect(() => {
     const getAllProducts = () => {
-      fetch('/api/fetchProducts')
+      fetch("/api/fetchProducts")
         .then(res => {
           if (res.ok) {
             return res.json()
@@ -24,7 +24,7 @@ function Products() {
           setData(fetchedProducts.productsDB.slice(0, 4)) // Only take the first 3 products
         })
         .catch(error => {
-          console.error('Error fetching products:', error);
+          console.error("Error fetching products:", error);
         });
     }
 

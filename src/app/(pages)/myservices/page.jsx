@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import "./myservices.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 function page() {
   return (
@@ -23,7 +23,7 @@ function page() {
               <span className="status">available</span>
               <a href="">more details</a>
           </div>
-          <a href='' className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
+          <a href="" className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
         </div>
 
         <div className="service">
@@ -35,7 +35,7 @@ function page() {
               <span className="status">available</span>
               <a href="">more details</a>
           </div>
-          <a href='' className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
+          <a href="" className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
         </div>
 
         <div className="service">
@@ -47,31 +47,31 @@ function page() {
               <span className="status">available</span>
               <a href="">more details</a>
           </div>
-          <a href='' className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
+          <a href="" className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
         </div>
 
         <div className="service">
           {/* <div className="img"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width={"40"} alt="" /></div> */}
           <div className="service-Desc">
             <h3>grapich designer</h3>
-            <p>I create stunning visual designs, including logos, banners, and graphics, using tools like Adobe Photoshop and Illustrator to elevate your brand's look
+            <p>I create stunning visual designs, including logos, banners, and graphics, using tools like Adobe Photoshop and Illustrator to elevate your brand"s look
               </p>
               <span className="status">available</span>
               <a href="">more details</a>
           </div>
-          <a href='' className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
+          <a href="" className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
         </div>
 
         <div className="service">
           {/* <div className="img"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width={"40"} alt="" /></div> */}
           <div className="service-Desc">
             <h3>social media manager</h3>
-            <p>I manage your social media presence with tailored strategies, engaging content, and analytics to boost your brand's visibility and growth
+            <p>I manage your social media presence with tailored strategies, engaging content, and analytics to boost your brand"s visibility and growth
               </p>
               <span className="status">available</span>
               <a href="">more details</a>
           </div>
-          <a href='' className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
+          <a href="" className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
         </div>
 
         <div className="service">
@@ -83,7 +83,7 @@ function page() {
               <span className="status">available</span>
               <a href="">more details</a>
           </div>
-          <a href='' className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
+          <a href="" className="contact-seller bg-green-300 p-2"><p>hire</p><FontAwesomeIcon width={"15"} icon={faWhatsapp} /></a>
         </div>
       
       

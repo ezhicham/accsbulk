@@ -1,9 +1,9 @@
 "use client"
 import "./detailsPro.css"
 
-import { notFound } from 'next/navigation'
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { notFound } from "next/navigation"
+import Image from "next/image"
+import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Spinner from "app/Component/spinner/Spinner"
@@ -31,7 +31,7 @@ console.log(session)
         setLoading(false)
       })
       .catch((error) => {
-        console.error('Error fetching product details:', error)
+        console.error("Error fetching product details:", error)
         setLoading(false)
       })
   }, [])
@@ -71,13 +71,14 @@ console.log(session)
            <div className="quantity">
              <p>select quantity:</p>
             <span>-</span>
-            <input type="text" />
+            <input type="text" placeholder="20"/>
             <span>+</span>
            </div>
 
 
-           <div className="price">
-           <p> {data.price} USD</p>
+           <div className="price flex gap-2 items-center ">
+            <span>total:</span>
+           <p className=" bg-green-100 p-1"> {data.price*5} USD</p>
            </div>
 
            </div>
