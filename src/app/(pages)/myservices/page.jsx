@@ -66,7 +66,9 @@ function page() {
           {/* <div className="img"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width={"40"} alt="" /></div> */}
           <div className="service-Desc">
             <h3>social media manager</h3>
-            <p>I manage your social media presence with tailored strategies, engaging content, and analytics to boost your brand"s visibility and growth
+            <p>I manage your social media presence with tailored strategies, engaging content,
+               and analytics to 
+              boost your brand s visibility and growth
               </p>
               <span className="status">available</span>
               <a href="">more details</a>
@@ -78,7 +80,8 @@ function page() {
           {/* <div className="img"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width={"40"} alt="" /></div> */}
           <div className="service-Desc">
             <h3>app mobile developer</h3>
-            <p>I build intuitive and high-performance mobile apps for iOS and Android, using technologies like React Native and Flutter for a seamless user experience
+            <p>I build intuitive and high-performance mobile apps for iOS and Android,
+               using technologies like React Native and Flutter for a seamless user experience
               </p>
               <span className="status">available</span>
               <a href="">more details</a>
