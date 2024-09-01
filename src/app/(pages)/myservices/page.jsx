@@ -42,7 +42,8 @@ function page() {
           {/* <div className="img"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width={"40"} alt="" /></div> */}
           <div className="service-Desc">
             <h3>ux/ui designer</h3>
-            <p>I design intuitive and engaging user interfaces, focusing on seamless user experiences with modern UX/UI principles and tools
+            <p>I design intuitive and engaging user interfaces, focusing on seamless 
+              user experiences with modern UX/UI principles and tools
               </p>
               <span className="status">available</span>
               <a href="">more details</a>
@@ -54,7 +55,7 @@ function page() {
           {/* <div className="img"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721616.png" width={"40"} alt="" /></div> */}
           <div className="service-Desc">
             <h3>grapich designer</h3>
-            <p>I create stunning visual designs, including logos, banners, and graphics, using tools like Adobe Photoshop and Illustrator to elevate your brand"s look
+            <p>I create stunning visual designs, including logos, banners, and graphics, using tools like Adobe Photoshop and Illustrator to elevate your brand look
               </p>
               <span className="status">available</span>
               <a href="">more details</a>
