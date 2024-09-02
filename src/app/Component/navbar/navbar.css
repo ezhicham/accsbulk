@@ -249,7 +249,7 @@ transform: scale(1);
   }
 nav  .catigories .catigory-drop-menu{
   left: -15px;
-  max-width: fit-content;
+  min-width: fit-content;
 
   }
   .catigories .catigory-drop-menu {
