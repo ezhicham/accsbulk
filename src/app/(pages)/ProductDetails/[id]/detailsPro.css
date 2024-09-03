@@ -3,7 +3,7 @@
   background-color: white;
   margin-top: 10px;
   margin-top: 100px;
-  height: fit-content;
+  min-height: 100vh;
 }
 .product-details .card{
   display: flex;
@@ -88,15 +88,14 @@
 }
 .details-part .price-quantity .price{
   color: rgb(243, 52, 81);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: capitalize;
   background-color: rgb(253, 238, 240);
   padding: 1px;
 }
 .details-part .price-quantity .price p{
-   
-   font-size: 20px;
+   font-size: 14px;
    font-weight: bold;
    color: #2eb780;
    background-color: #daf5eb;
@@ -158,6 +157,9 @@ color: gray;
     position: relative;
   }
   .details-part{
+    width: 100%;
+  }
+  .pay-add-btn{
     width: 100%;
   }
   

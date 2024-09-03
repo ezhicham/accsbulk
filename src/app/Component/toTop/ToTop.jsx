@@ -1,7 +1,7 @@
 "use client";
-
-import { useState, useEffect } from "react";
 import "./totop.css";
+import { useState, useEffect } from "react";
+
 
 function ToTop() {
   const [scrollBtnActive, setScrollBtnActive] = useState(false);
@@ -34,7 +34,7 @@ function ToTop() {
   return (
     <div className="toTop">
       {scrollBtnActive && (
-        <button className="bg-violet-500 text-white p-3" onClick={toTopScroll}>
+        <button className="bg-violet-500 text-white p-1" onClick={toTopScroll}>
           ^
         </button>
       )}

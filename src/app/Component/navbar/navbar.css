@@ -236,7 +236,13 @@ transform: scale(1);
   color: goldenrod;
 }
 /* media query  */
-
+@media (max-width:768px){
+  nav  .catigories .catigory-drop-menu{
+    right: -50px;
+    min-width: fit-content;
+  
+    }
+}
 
 @media (max-width:600px){
   nav{
@@ -248,7 +254,7 @@ transform: scale(1);
     
   }
 nav  .catigories .catigory-drop-menu{
-  left: -15px;
+  left: -35px;
   min-width: fit-content;
 
   }

@@ -65,7 +65,7 @@ function page() {
             <p>pro description ...</p>
           </div>
           {/* price of pro per unit */}
-          <div className="price bg-green-100 text-green-500">23 usd</div>
+          <div className="price bg-green-100 text-green-500"><p>23 usd</p></div>
             {/* buy event */}
             <div className="btn-buy">
               <Link href={`/ProductDetails/`}>

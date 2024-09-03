@@ -36,12 +36,12 @@ console.log(session)
       })
   }, [])
 
-  if (isLoading) return <Spinner/>
+  if (isLoading) return <div className="mt-10"><Spinner/></div>
   if (!data) return <p>this product not available data</p>
 
 
 
-
+if(data){
   return (
     <>
   
@@ -104,6 +104,8 @@ console.log(session)
       </div>
     </>
   )
+}
+  
 }
 
 export default Page
