@@ -55,6 +55,7 @@
   align-items: center;
   gap: 10px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .details-part .price-quantity input{
    background-color: #f8f3ff;
